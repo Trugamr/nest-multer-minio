@@ -8,8 +8,7 @@ export class FilesController {
 
   @Put()
   @UseInterceptors(FileInterceptor('file'))
-  put(@UploadedFile('file') file: Express.Multer.File) {
-    delete file.buffer;
-    return file;
+  put(@UploadedFile('file') file: Express.MulterS3.File) {
+    return this.filesService.put(file);
   }
 }

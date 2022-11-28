@@ -16,11 +16,16 @@
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
   },
   "dependencies": {
+    "@aws-sdk/abort-controller": "^3.215.0",
+    "@aws-sdk/client-s3": "^3.218.0",
+    "@aws-sdk/lib-storage": "^3.218.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^9.0.0",
+    "content-disposition": "^0.5.4",
+    "multer-s3": "^3.0.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
@@ -29,8 +34,10 @@
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
+    "@types/content-disposition": "^0.5.5",
     "@types/express": "^4.17.13",
     "@types/multer": "^1.4.7",
+    "@types/multer-s3": "^3.0.0",
     "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
